@@ -18,3 +18,5 @@ docker run -d --link serf:serf --link redis:redis bivas/serf-wrapper
 ```
 
 The wrapper will use the link information and publish your service (in the above example: role=redis_6379)
+
+*Note*: If multiple containers are linked, only the first (non-serf) container will count as service container
