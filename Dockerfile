@@ -10,4 +10,6 @@ RUN rm -rf serf.zip
 ADD /serf-join.sh /serf-join.sh
 RUN chmod +x /serf-join.sh
 
+EXPOSE 7373
+EXPOSE 7946
 ENTRYPOINT ["/serf-join.sh"]
